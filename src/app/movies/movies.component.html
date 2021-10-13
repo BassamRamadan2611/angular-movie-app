@@ -1,0 +1,26 @@
+<div class="test"></div>
+<div class="row">
+
+    <div class="col-md-4 py-5">
+
+        <div class="brdr w-25"></div>
+        <h2 class="text-white py-3">Top 250  Movies</h2>
+        <p class="text-muted">This Top 250 Movies </p>
+        <div class="brdr w-100"></div>
+
+    </div>
+    <div *ngFor="let movie of trendingMovies" class="col-md-2 my-2">
+
+        <div class="movie position-relative">
+            <div class="image position-relative">
+            <img class="img-fluid" src="{{movie.image}}">
+            <div class="vote">{{movie.rank}}</div>
+            </div>
+    <h6 class="text-white my-2">{{movie.fullTitle}}</h6>
+      
+
+    </div>
+    </div>
+</div>
+
+
